@@ -1,1 +1,3 @@
-
+```python
+numb=int(input("input: "))
+```
