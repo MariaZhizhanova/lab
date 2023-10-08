@@ -36,7 +36,7 @@ class Gardener:
     def work(self):
         self._plan.grow_all()
 
-    def harvest(self):
+    def  harvest(self):
         if self._plan.all_are_ripe():
             print(f"{self.name} собирает урожай.")
         else:
@@ -55,15 +55,18 @@ class Gardener:
 Gardener.knowledge_base()
 
 # Создаем объекты классов TomatoBush и Gardener
-tomato_bush = TomatoBush(7)
+tomato_bush = TomatoBush()
 gardener = Gardener("Маша", tomato_bush)
 
-# Пробуем собрать урожай
-gardener.harvest()
 
-# Садовник работает
+# Уход за кустом с помидорами
+gardener.work()
 gardener.work()
 
-# Собираем урожай
+# Попытка сбора урожая
+gardener.harvest()
+
+# Сбор урожая после дозревания всех томатов
+gardener.work()
 gardener.harvest()
 ```
