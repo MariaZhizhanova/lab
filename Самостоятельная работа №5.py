@@ -12,7 +12,7 @@ return (p * (p - a) * (p - b) * (p - c)) ** 0,5
 ```python
 def square_triangle(a, b, c):
 p = (a + b + c) / 2
-return (p * (p - a) * (p - b) * (p - c)) ** 0,54
+return (p * (p - a) * (p - b) * (p - c)) ** 0,5
 
 from main import square_triangle
 
